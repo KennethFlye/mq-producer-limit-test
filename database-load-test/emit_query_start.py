@@ -3,7 +3,7 @@ import configparser
 
 config = configparser.ConfigParser()
 
-config.read(r'src/config/settings/config.ini')
+config.read(r'config/settings/config.ini')
 
 mq_server_host = config.get("MQ", "mq_server_host")
 mq_user = config.get("MQ", "mq_user")
